@@ -25,11 +25,11 @@ class App extends Component {
                 <Header/>
                 <Switch>
                     <Route exact path={'/'} render={() => {
-                        return <Redirect to={'/products'}/>
+                        return <Redirect to={'/my-shop-mobile-app-ReactJs/'}/>
                     }}/>
-                    <Route exact path={'/products'} component={Home}/>
-                    <Route exact path={'/products/:id'} component={ProductDetail}/>
-                    <Route exact patr={'/cart'} component={ShoppingCart}/>
+                    <Route exact path={'/my-shop-mobile-app-ReactJs/'} component={Home}/>
+                    <Route exact path={'/my-shop-mobile-app-ReactJs/:id'} component={ProductDetail}/>
+                    <Route exact patr={'/my-shop-mobile-app-ReactJs/cart'} component={ShoppingCart}/>
                 </Switch>
                 <Footer/>
             </React.Fragment>
