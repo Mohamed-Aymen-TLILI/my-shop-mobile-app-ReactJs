@@ -24,9 +24,7 @@ class App extends Component {
             <React.Fragment>
                 <Header/>
                 <Switch>
-                    <Route exact path={'/'} render={() => {
-                        return <Redirect to={'/my-shop-mobile-app-ReactJs/'}/>
-                    }}/>
+                    
                     <Route exact path={'/my-shop-mobile-app-ReactJs/'} component={Home}/>
                     <Route exact path={'/my-shop-mobile-app-ReactJs/:id'} component={ProductDetail}/>
                     <Route exact patr={'/my-shop-mobile-app-ReactJs/cart'} component={ShoppingCart}/>
